@@ -1,0 +1,6 @@
+.property(@property, @value) {
+  -less-property: ~`'property;\n  @{property}: @{value}'`;
+}
+.property(@prefixes, @property, @value) {
+  -less-property: ~`(function(){var a=@{prefixes}.split(" "),r="property";for(var i=0;i<a.length;i++)r=r+";\n  -"+a[i]+"-"+"@{property}: "+"@{value}";return r})()`;
+}
