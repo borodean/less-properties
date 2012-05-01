@@ -37,13 +37,10 @@ Which will output in:
   border-radius: 10px 20px;
 }
 ```
-And mass create properties with prefixes:
+You can also mass create properties with prefixes:
 ```scss
-@prefixes: 'moz webkit o';
-@property: border-radius;
-
 .class {
-  .property(@prefixes, @property, 10px);
+  .property('moz webkit o', border-radius, 10px);
 }
 ```
 Which will output in:
