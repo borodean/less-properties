@@ -5,7 +5,7 @@ Set of mixins that adds some variable property support to [LESS](https://github.
 usage
 -----
 
-Include properties.less to your *.less stylesheet:
+Include this stylesheet to your project:
 ```scss
   @import url('properties.less');
 ```
