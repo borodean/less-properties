@@ -13,7 +13,7 @@ Include this file to your *.less stylesheet:
 examples
 --------
 
-You can use variable properties:
+Now you can use variable properties:
 ```scss
 @property: border-radius;
 
