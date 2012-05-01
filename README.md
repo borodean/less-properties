@@ -17,16 +17,23 @@ You can use variable properties:
 ```scss
 @property: border-radius;
 
-.class {
+.class-1 {
   .property(@property, 10px);
+}
+
+.class-2 {
   .property(@property, ~'10px 20px');
 }
 ```
 Which will output in:
 ```css
-.class {
+.class-1 {
   -less-property: property;
   border-radius: 10px;
+}
+
+.class-2 {
+  -less-property: property;
   border-radius: 10px 20px;
 }
 ```
