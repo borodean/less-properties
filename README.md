@@ -55,4 +55,4 @@ Which will output in:
 
 known issues
 ------------
-The `-less-property: property` junk line of code is a neccesary sacrifice due to hack nature of this set of mixins.
+The `-less-property: property;` junk line of code is a neccesary sacrifice due to the hack nature of this set of mixins.
