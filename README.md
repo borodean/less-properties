@@ -40,7 +40,7 @@ Which will output in:
 You can also mass create properties with prefixes:
 ```scss
 .class {
-  .property('moz webkit o', border-radius, 10px);
+  .property(border-radius, 10px, 'moz webkit o');
 }
 ```
 Which will output in:
