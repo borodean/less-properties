@@ -1,6 +1,6 @@
 less-properties
 ===============
-Adds some variable property support to [LESS](https://github.com/cloudhead/less.js).
+Set of mixins that adds some variable property support to [LESS](https://github.com/cloudhead/less.js).
 
 usage
 -----
@@ -52,3 +52,7 @@ Which will output in:
   -o-border-radius: 10px;
 }
 ```
+
+known issues
+------------
+The `-less-property: property` junk line of code is a neccesary sacrifice due to hack nature of this set of mixins.
