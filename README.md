@@ -7,7 +7,7 @@ usage
 
 Include this stylesheet to your project:
 ```scss
-  @import url('properties.less');
+@import url('properties.less');
 ```
 
 examples
