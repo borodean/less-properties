@@ -1,0 +1,62 @@
+@import "properties.less";
+
+.test-base {
+  -test-should: generate a single prefixless property;
+  -test-check: there are not two of the same thing;
+  .property(user-select, none);
+}
+
+.test-prefixes {
+  -test-should: generate a set of prefixed properties and a prefixless property;
+  .property(user-select, none, "webkit moz o");
+}
+
+.test-prefixes-no-base {
+  -test-should: generate the prefixed properties and no prefixless property;
+  .property(user-select, none, "webkit moz o", false);
+}
+
+.test-stupid {
+  -test-should:  generate only the -less-property;
+  .property(user-select, none, "", false);
+}
+
+.test-compound {
+  -test-should:  generate a property definition that looks correct;
+  .property(transition, all .5s ease, "webkit moz o");
+}
+
+.test-compound-literal {
+  -test-should:  generate a property from the literal correctly;
+  .property(transition, ~"all .5s ease", "webkit moz o");
+}
+
+.test-function {
+  -test-should:  not bomb with the function, not remove the comma;
+  .property(transform, translate(10px, 10px), "webkit moz o");
+}
+
+.test-function-param-preserve-second {
+  -test-should:  preserve value correctly;
+  -test-check:  the comma inside translate() gets preserved;
+  .property(transform, scale(.5) translate(10px, 10px), "webkit moz o")
+}
+
+.test-function-param-preserve-first {
+  -test-should:  preserve value correctly;
+  -test-check:  the comma inside translate() gets preserved;
+  .property(transform, translate(10px, 10px) scale(.5), "webkit moz o")
+}
+
+.test-function-param-preserve-double {
+  -test-should:  preserve value correctly;
+  -test-check:  the comma inside both translate() gets preserved;
+  .property(transform, translate(10px, 10px) translate(10px, 10px), "webkit moz o");
+}
+
+.test-nested-coumpoun {
+  -test-should: look correct;
+  @v1: .5s;
+  @v2: all @v1 ease;
+  .property(transition, @v2, "webkit moz o");
+}
