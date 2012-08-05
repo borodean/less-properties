@@ -1,7 +1,3 @@
-.property(@property, @value) {
-  -less-property: ~`'property;\n  @{property}: @{value}'`;
-}
-
-.property(@property, @value, @prefixes) {
-  -less-property: ~`(function(){var a=@{prefixes}.split(" "),r="property";for(var i=0;i<a.length;i++)r=r+";\n  -"+a[i]+"-"+"@{property}: "+"@{value}";return r})()`;
+.property(@property, @value, @prefixes: "", @base: true) {
+  -ig: ~`(function(){var a=@{prefixes}.split(/\s+/),r='nore',i=0;@{base}&&a.push('');for(;i<a.length;++i)b=a[i],r+=";\n  "+(b?"-"+b+"-":b)+"@{property}: "+"@{value}";return r})()`;
 }
