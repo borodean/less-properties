@@ -75,8 +75,11 @@ known issues
 ------------
 The `-less-property: property` junk line of code is a necessary sacrifice due to
 the hack nature of this mixin. However, all browsers should normally skip this
-line so it's just a matter of purity of code. I'm looking forward to finding out
-a cleaner solution.
+line so it's just a matter of purity of code.
+
+The mixin properly works with values that have spaces in them (e. g.
+`1px solid red`) only when those are passed as an escaped string (e. g.
+`~'1px solid red'`).
 
 license
 -------
