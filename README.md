@@ -1,3 +1,7 @@
+**Deprecated. LESS supports [property interpolation](http://lesscss.org/features/#variables-feature-properties) since version 1.6.0.**
+
+---
+
 less-properties
 ===============
 Mixin that adds some variable property support to [LESS](https://github.com/cloudhead/less.js).
