@@ -1,6 +1,6 @@
 less-properties
 ===============
-Set of mixins that adds some variable property support to [LESS](https://github.com/cloudhead/less.js).
+Mixin that adds some variable property support to [LESS](https://github.com/cloudhead/less.js).
 
 usage
 -----
@@ -74,9 +74,9 @@ Which will output in:
 known issues
 ------------
 The `-less-property: property` junk line of code is a necessary sacrifice due to
-the hack nature of this set of mixins. However, all browsers should normally
-skip this line so it's just a matter of purity of code. I'm looking forward to
-finding out a cleaner solution.
+the hack nature of this mixin. However, all browsers should normally skip this
+line so it's just a matter of purity of code. I'm looking forward to finding out
+a cleaner solution.
 
 license
 -------
