@@ -73,10 +73,10 @@ Which will output in:
 
 known issues
 ------------
-The `-less-property: property` junk line of code is a neccesary sacrifice due to
+The `-less-property: property` junk line of code is a necessary sacrifice due to
 the hack nature of this set of mixins. However, all browsers should normally
 skip this line so it's just a matter of purity of code. I'm looking forward to
-find out a cleaner solution.
+finding out a cleaner solution.
 
 license
 -------
